@@ -8,7 +8,8 @@ function respond() {
       botRegex = /^\/cool guy$/;
 
   //if(request.text && botRegex.test(request.text)) {
-  if(request.name === "sim s") {
+  if(request.name === "sim s" || request.name === "sim") {
+    console.log("user "+ request.user_id + " has spoken");
     this.res.writeHead(200);
     var msg = randCollusionMsg();
     postMessage(msg);
