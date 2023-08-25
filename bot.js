@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy$/;
 
   //if(request.text && botRegex.test(request.text)) {
-  if(request.name === "Sat Chahal") {
+  if(request.name === "sim s") {
     this.res.writeHead(200);
     postMessage();
     this.res.end();
