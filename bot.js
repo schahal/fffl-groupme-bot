@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy$/;
 
   //if(request.text && botRegex.test(request.text)) {
-  if(request.name == "Sat Chahal") {
+  if(request.name === "Sat Chahal") {
     this.res.writeHead(200);
     postMessage();
     this.res.end();
@@ -22,7 +22,8 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = cool();
+  //botResponse = cool();
+  botResponse = "* This member attempted to collude, thwarted only by the integrity of others."
 
   options = {
     hostname: 'api.groupme.com',
