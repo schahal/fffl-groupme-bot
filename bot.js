@@ -10,7 +10,8 @@ function respond() {
   //if(request.text && botRegex.test(request.text)) {
   if(request.name === "sim s") {
     this.res.writeHead(200);
-    postMessage();
+    var msg = randCollusionMsg();
+    postMessage(msg);
     this.res.end();
   } else {
     console.log("don't care");
@@ -19,11 +20,24 @@ function respond() {
   }
 }
 
-function postMessage() {
+function randCollusionMsg() {
+  var msgs = [
+    "* This member attempted to collude, thwarted only by the integrity of others.",
+    "* The Houston Astros of fantasy football.",
+    "* Forever tainted.",
+    "* Lacks fantasy etiquette, stuck with the 'strick.",
+    "* Shady. And I'm not talking about Lesean McCoy."
+  ];
+
+  var index = Math.floor(Math.random() * msgs.length);
+  return msgs[index];
+}
+
+function postMessage(botMessage) {
   var botResponse, options, body, botReq;
 
   //botResponse = cool();
-  botResponse = "* This member attempted to collude, thwarted only by the integrity of others."
+  botResponse = botMessage
 
   options = {
     hostname: 'api.groupme.com',
