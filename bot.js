@@ -29,6 +29,10 @@ function randCollusionMsg() {
     "* Forever tainted.",
     "* Lacks fantasy etiquette, stuck with the 'strick.",
     "* Shady. And I'm not talking about Lesean McCoy."
+    "* Shady. Like Deshaun Watson hanging around the Vietnamese shops in SJ."
+    "* Shady. Like if a podiatrist with a limp recommends an invasive procedure."
+    "* Was caught cheating. Like Sammy Sosa's face when his corked bat exploded."
+    "* Tried to hide his cheating. Like Altuve's jersey's top 3 buttons."
   ];
 
   var index = Math.floor(Math.random() * msgs.length);
