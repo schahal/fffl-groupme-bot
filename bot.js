@@ -11,7 +11,7 @@ function respond() {
   // Sim
   if (request.text && request.text.trim().toLowerCase() === "god, show me live draft standings") {
     this.res.writeHead(200);
-    postMessage("Subject to commish approval:\n\nmaneh: 9\nsat 7\nal: 17\mash: 10\nharv 5\nsuraj: 19\nkal: 15\nsim: 11\ndev: 10\njpreet: 23\nrav: 12\nadeep: 16\nharj: 24\nchris: 25" );
+    postMessage("Subject to commish approval:\n\nmaneh: 9\nsat 7\nal: 17\nash: 10\nharv 5\nsuraj: 19\nkal: 15\nsim: 11\ndev: 10\njpreet: 23\nrav: 12\nadeep: 16\nharj: 24\nchris: 25" );
     this.res.end();
   } else if(request.user_id === "9248518") {
     console.log("user "+ request.user_id + " has spoken");
